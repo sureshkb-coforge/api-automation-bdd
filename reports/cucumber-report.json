@@ -1,0 +1,534 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-04-07T13:05:57.305Z",
+        "line": 4,
+        "name": "Delete Operation - Success",
+        "description": "",
+        "id": "verify-delete-operations-using-rest-assured;delete-operation---success",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1255539800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Run the API to Perform delete operation for individual user having end point \u0027deleteUserEndpoint\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027deleteUserEndpoint\u0027",
+                  "offset": 77
+                }
+              ],
+              "location": "stepdefinitions.VancityStepDef.runTheAPIToPerformDeleteOperationForIndividualUserHavingEndPointDeleteUserEndpoint(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4002000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should receive status code 204",
+            "match": {
+              "arguments": [
+                {
+                  "val": "204",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefinitions.VancityStepDef.i_should_receive_status_code(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@VancityAPIAutomation"
+          }
+        ]
+      }
+    ],
+    "name": "Verify DELETE operations using REST Assured",
+    "description": "",
+    "id": "verify-delete-operations-using-rest-assured",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/services_automation_delete.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-04-07T13:05:58.731Z",
+        "line": 4,
+        "name": "Run the API to get details of individual user",
+        "description": "",
+        "id": "verify-different-get-operations-using-rest-assured;run-the-api-to-get-details-of-individual-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 841615300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Perform get operation for individual user having endpoint \u0027getUserEndpoint\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027getUserEndpoint\u0027",
+                  "offset": 58
+                }
+              ],
+              "location": "stepdefinitions.VancityStepDef.perform_get_operation_for_individual_user_having_endpoint(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 998700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should receive status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefinitions.VancityStepDef.i_should_receive_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 26501500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the response should contain user first name \"Janet\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Janet\"",
+                  "offset": 44
+                }
+              ],
+              "location": "stepdefinitions.VancityStepDef.the_response_should_contain_user_first_name(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@VancityAPIAutomation"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2026-04-07T13:05:59.620Z",
+        "line": 10,
+        "name": "Run the API to get the list of users spread in multiple pages",
+        "description": "",
+        "id": "verify-different-get-operations-using-rest-assured;run-the-api-to-get-the-list-of-users-spread-in-multiple-pages",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 505917700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Perform get operation for individual user having endpoint \u0027getUserListEndpoint\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027getUserListEndpoint\u0027",
+                  "offset": 58
+                }
+              ],
+              "location": "stepdefinitions.VancityStepDef.perform_get_operation_for_individual_user_having_endpoint(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 999100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I should receive status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefinitions.VancityStepDef.i_should_receive_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 27004600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Verify the field \u0027total_pages\u0027 having count 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027total_pages\u0027",
+                  "offset": 17
+                },
+                {
+                  "val": "2",
+                  "offset": 44
+                }
+              ],
+              "location": "stepdefinitions.VancityStepDef.verifyTheFieldTotal_pagesHavingCount(java.lang.String,int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@VancityAPIAutomation"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2026-04-07T13:06:00.171Z",
+        "line": 16,
+        "name": "Run the API to get the list of products spread in multiple pages",
+        "description": "",
+        "id": "verify-different-get-operations-using-rest-assured;run-the-api-to-get-the-list-of-products-spread-in-multiple-pages",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 476914600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Perform get operation for individual user having endpoint \u0027getProductListEndpoint\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027getProductListEndpoint\u0027",
+                  "offset": 58
+                }
+              ],
+              "location": "stepdefinitions.VancityStepDef.perform_get_operation_for_individual_user_having_endpoint(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 995600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I should receive status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefinitions.VancityStepDef.i_should_receive_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12007400,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "verify the filed \u0027total\u0027 whose value is displayed as 12",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027total\u0027",
+                  "offset": 17
+                },
+                {
+                  "val": "12",
+                  "offset": 53
+                }
+              ],
+              "location": "stepdefinitions.VancityStepDef.verifyTheFiledTotalWhoseValueIsDisplayedAs(java.lang.String,int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@VancityAPIAutomation"
+          }
+        ]
+      }
+    ],
+    "name": "Verify different GET operations using REST Assured",
+    "description": "",
+    "id": "verify-different-get-operations-using-rest-assured",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/services_automation_get.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-04-07T13:06:00.676Z",
+        "line": 4,
+        "name": "Run the API to register a user with email and password",
+        "description": "",
+        "id": "verify-different--post-operations-using-rest-assured;run-the-api-to-register-a-user-with-email-and-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3004500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I read test data from excel row 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 32
+                }
+              ],
+              "location": "stepdefinitions.VancityStepDef.iReadTestDataFromExcelRow(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 795872000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I build request body from \"updateUser.json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"updateUser.json\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.VancityStepDef.iBuildRequestBodyFrom(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 458662000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I send POST request to update user using endpoint \u0027userRegisterEndpoint\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027userRegisterEndpoint\u0027",
+                  "offset": 50
+                }
+              ],
+              "location": "stepdefinitions.VancityStepDef.iSendPOSTRequestToUpdateUserUsingEndpointUserRegisterEndpoint(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should receive status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefinitions.VancityStepDef.i_should_receive_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9006400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should be able to see \u0027id\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027id\u0027",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.VancityStepDef.i_should_be_able_to_see(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12094700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should be able to see \u0027token\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027token\u0027",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.VancityStepDef.i_should_be_able_to_see(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@VancityAPIAutomation"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2026-04-07T13:06:01.970Z",
+        "line": 14,
+        "name": "Run the API to register a user with email and password",
+        "description": "",
+        "id": "verify-different--post-operations-using-rest-assured;run-the-api-to-register-a-user-with-email-and-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 999900,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I read test data from excel row 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 32
+                }
+              ],
+              "location": "stepdefinitions.VancityStepDef.iReadTestDataFromExcelRow(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 57560000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I build request body from \"updateUser.json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"updateUser.json\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.VancityStepDef.iBuildRequestBodyFrom(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 291923500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I send POST request to update user using endpoint \u0027userLoginEndpoint\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027userLoginEndpoint\u0027",
+                  "offset": 50
+                }
+              ],
+              "location": "stepdefinitions.VancityStepDef.iSendPOSTRequestToUpdateUserUsingEndpointUserRegisterEndpoint(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1018400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I should receive status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefinitions.VancityStepDef.i_should_receive_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11895000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I should be able to see \u0027token\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027token\u0027",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.VancityStepDef.i_should_be_able_to_see(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@VancityAPIAutomation"
+          }
+        ]
+      }
+    ],
+    "name": "Verify different  POST operations using REST Assured",
+    "description": "",
+    "id": "verify-different--post-operations-using-rest-assured",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/services_automation_post.feature",
+    "tags": []
+  }
+]

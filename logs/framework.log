@@ -1,0 +1,644 @@
+2026-04-07 18:35:55.800 [main] INFO  utils.LoggerUtil - ========================================
+2026-04-07 18:35:55.814 [main] INFO  utils.LoggerUtil - Starting API automation suite execution
+2026-04-07 18:35:55.814 [main] INFO  utils.LoggerUtil - ========================================
+2026-04-07 18:35:55.816 [main] INFO  utils.LoggerUtil - Environment set to: QA
+2026-04-07 18:35:55.816 [main] INFO  utils.LoggerUtil - Using environment: QA
+2026-04-07 18:35:55.817 [main] INFO  utils.LoggerUtil - All required directories verified
+2026-04-07 18:35:55.817 [main] INFO  utils.LoggerUtil - Environment set to: QA
+2026-04-07 18:35:55.818 [main] INFO  utils.LoggerUtil - Default configuration loaded from: config/config.properties
+2026-04-07 18:35:55.819 [main] INFO  utils.LoggerUtil - Environment-specific configuration loaded from: config/config-QA.properties
+2026-04-07 18:35:55.819 [main] INFO  utils.LoggerUtil - Configuration loaded successfully for environment: QA
+2026-04-07 18:35:55.819 [main] INFO  utils.LoggerUtil - Total properties: 10
+2026-04-07 18:35:55.819 [main] DEBUG utils.LoggerUtil - Loaded properties keys: [getUserEndpoint, apiKey, userLoginEndpoint, getProductListEndpoint, getUserListEndpoint, defaultSheet, baseURL, deleteUserEndpoint, userRegisterEndpoint, excelPath]
+2026-04-07 18:35:55.820 [main] INFO  utils.LoggerUtil - Configuration properties loaded successfully for environment: QA
+2026-04-07 18:35:56.148 [main] INFO  utils.LoggerUtil - Extent reports initialized successfully
+2026-04-07 18:35:56.148 [main] INFO  utils.LoggerUtil - Extent reports initialized
+2026-04-07 18:35:56.149 [main] INFO  utils.LoggerUtil - GlobalContext cleared
+2026-04-07 18:35:56.149 [main] INFO  utils.LoggerUtil - Global context cleared for fresh start
+2026-04-07 18:35:57.156 [TestNG-tests-2] INFO  utils.LoggerUtil - API Client initialized successfully
+2026-04-07 18:35:57.283 [TestNG-tests-2] INFO  utils.LoggerUtil - Executing GET /api/users/2 (Attempt 1/3)
+2026-04-07 18:35:57.283 [TestNG-tests-2] INFO  utils.LoggerUtil - Executing GET request to: /api/users/2
+2026-04-07 18:35:57.426 [TestNG-tests-1] INFO  utils.LoggerUtil - API Client initialized successfully
+2026-04-07 18:35:57.427 [TestNG-tests-1] INFO  utils.LoggerUtil - running DELETE API
+2026-04-07 18:35:57.427 [TestNG-tests-1] INFO  utils.LoggerUtil - Executing DELETE request to: /api/users/2
+2026-04-07 18:35:58.649 [TestNG-tests-2] INFO  utils.LoggerUtil - ====== RESPONSE ======
+2026-04-07 18:35:58.649 [TestNG-tests-1] INFO  utils.LoggerUtil - ====== RESPONSE ======
+2026-04-07 18:35:58.650 [TestNG-tests-2] INFO  utils.LoggerUtil - Status Code: 200
+2026-04-07 18:35:58.650 [TestNG-tests-1] INFO  utils.LoggerUtil - Status Code: 204
+2026-04-07 18:35:58.650 [TestNG-tests-2] INFO  utils.LoggerUtil - Status Line: HTTP/1.1 200 OK
+2026-04-07 18:35:58.650 [TestNG-tests-1] INFO  utils.LoggerUtil - Status Line: HTTP/1.1 204 No Content
+2026-04-07 18:35:58.650 [TestNG-tests-2] INFO  utils.LoggerUtil - Headers: Date=Tue, 07 Apr 2026 13:06:36 GMT
+Content-Type=application/json; charset=utf-8
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Cache-Control=public, max-age=14400, s-maxage=60
+Cdn-Cache-Control=max-age=60
+Cross-Origin-Opener-Policy=same-origin
+Cross-Origin-Resource-Policy=same-origin
+Etag=W/"309-xht0adi+2R3nyR08DqinqzlyEM0"
+Nel={"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Origin-Agent-Cluster=?1
+Ratelimit-Limit=20
+Ratelimit-Policy=20;w=60
+Ratelimit-Remaining=19
+Ratelimit-Reset=60
+Referrer-Policy=strict-origin-when-cross-origin
+Report-To={"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=MwsHxyGDtgg2wHi5Mammr2Iib2GeLpw7rj%2F3p5t%2Bnoc%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1775567196"}],"max_age":3600}
+Reporting-Endpoints=heroku-nel="https://nel.heroku.com/reports?s=MwsHxyGDtgg2wHi5Mammr2Iib2GeLpw7rj%2F3p5t%2Bnoc%3D&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&ts=1775567196"
+Server=cloudflare
+Strict-Transport-Security=max-age=31536000; includeSubDomains
+Via=1.1 heroku-router
+X-Content-Type-Options=nosniff
+X-Dns-Prefetch-Control=off
+X-Download-Options=noopen
+X-Frame-Options=DENY
+X-Permitted-Cross-Domain-Policies=none
+X-Powered-By=ReqRes.in - Deploy backends in 30 seconds
+X-Ratelimit-Limit=250
+X-Ratelimit-Remaining=248
+X-Ratelimit-Reset=1775606400
+X-Reqres-Docs=https://reqres.in
+X-Reqres-Message=This API is powered by ReqRes. Deploy your own backend in 30 seconds!
+X-Reqres-Templates=https://app.reqres.in/templates
+X-Reqres-Tip=Build with your own data, not fixtures - app.reqres.in/dashboard
+X-Reqres-Trial=true
+X-Reqres-Trial-Days-Remaining=4
+X-Reqres-Trial-Expires=2026-04-11T01:40:26.038Z
+X-Reqres-Upgrade=https://app.reqres.in/upgrade
+X-Request-Id=448f67e4-4399-9b7a-d522-342d4b967640
+X-Robots-Tag=noindex, nofollow
+X-Xss-Protection=0
+cf-cache-status=MISS
+Content-Encoding=gzip
+CF-RAY=9e89401f8dd78826-MAA
+2026-04-07 18:35:58.651 [TestNG-tests-2] INFO  utils.LoggerUtil - Response Time: 939ms
+2026-04-07 18:35:58.651 [TestNG-tests-1] INFO  utils.LoggerUtil - Headers: Date=Tue, 07 Apr 2026 13:06:36 GMT
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Cache-Control=no-store
+Cross-Origin-Opener-Policy=same-origin
+Cross-Origin-Resource-Policy=same-origin
+Etag=W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+Nel={"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Origin-Agent-Cluster=?1
+Ratelimit-Limit=20
+Ratelimit-Policy=20;w=60
+Ratelimit-Remaining=19
+Ratelimit-Reset=60
+Referrer-Policy=strict-origin-when-cross-origin
+Report-To={"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=MwsHxyGDtgg2wHi5Mammr2Iib2GeLpw7rj%2F3p5t%2Bnoc%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1775567196"}],"max_age":3600}
+Reporting-Endpoints=heroku-nel="https://nel.heroku.com/reports?s=MwsHxyGDtgg2wHi5Mammr2Iib2GeLpw7rj%2F3p5t%2Bnoc%3D&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&ts=1775567196"
+Server=cloudflare
+Strict-Transport-Security=max-age=31536000; includeSubDomains
+Via=1.1 heroku-router
+X-Content-Type-Options=nosniff
+X-Dns-Prefetch-Control=off
+X-Download-Options=noopen
+X-Frame-Options=DENY
+X-Permitted-Cross-Domain-Policies=none
+X-Powered-By=ReqRes.in - Deploy backends in 30 seconds
+X-Ratelimit-Limit=250
+X-Ratelimit-Remaining=249
+X-Ratelimit-Reset=1775606400
+X-Reqres-Docs=https://reqres.in
+X-Reqres-Message=This API is powered by ReqRes. Deploy your own backend in 30 seconds!
+X-Reqres-Templates=https://app.reqres.in/templates
+X-Reqres-Tip=Create your own backend with persistent data - app.reqres.in/dashboard
+X-Reqres-Trial=true
+X-Reqres-Trial-Days-Remaining=4
+X-Reqres-Trial-Expires=2026-04-11T01:40:26.038Z
+X-Reqres-Upgrade=https://app.reqres.in/upgrade
+X-Request-Id=ad753226-c0c1-e268-3d70-a261f604c4a8
+X-Robots-Tag=noindex, nofollow
+X-Xss-Protection=0
+cf-cache-status=DYNAMIC
+CF-RAY=9e89401f8f619f61-MAA
+2026-04-07 18:35:58.651 [TestNG-tests-1] INFO  utils.LoggerUtil - Response Time: 939ms
+2026-04-07 18:35:58.668 [TestNG-tests-1] INFO  utils.LoggerUtil - Body: 
+2026-04-07 18:35:58.668 [TestNG-tests-1] INFO  utils.LoggerUtil - ======================
+2026-04-07 18:35:58.689 [TestNG-tests-1] INFO  utils.LoggerUtil - Validating the response code 
+2026-04-07 18:35:58.739 [TestNG-tests-1] INFO  utils.LoggerUtil - API Client initialized successfully
+2026-04-07 18:35:58.740 [TestNG-tests-1] INFO  utils.LoggerUtil - Starting GET request for endpoint: getUserEndpoint
+2026-04-07 18:35:58.740 [TestNG-tests-1] INFO  utils.LoggerUtil - Executing GET /api/users/2 (Attempt 1/3)
+2026-04-07 18:35:58.741 [TestNG-tests-1] INFO  utils.LoggerUtil - Executing GET request to: /api/users/2
+2026-04-07 18:35:58.751 [TestNG-tests-2] INFO  utils.LoggerUtil - Body: {
+    "data": {
+        "id": 2,
+        "email": "janet.weaver@reqres.in",
+        "first_name": "Janet",
+        "last_name": "Weaver",
+        "avatar": "https://reqres.in/img/faces/2-image.jpg"
+    },
+    "support": {
+        "url": "https://benhowdle.im/first-cto-playbook?utm_source=reqres&utm_medium=json&utm_campaign=referral",
+        "text": "Become a better CTO. A playbook of painful stories and practical advice from a two-time startup CTO."
+    },
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-04-07 18:35:58.752 [TestNG-tests-2] INFO  utils.LoggerUtil - ======================
+2026-04-07 18:35:58.839 [TestNG-tests-1] INFO  utils.LoggerUtil - ====== RESPONSE ======
+2026-04-07 18:35:58.840 [TestNG-tests-1] INFO  utils.LoggerUtil - Status Code: 200
+2026-04-07 18:35:58.840 [TestNG-tests-1] INFO  utils.LoggerUtil - Status Line: HTTP/1.1 200 OK
+2026-04-07 18:35:58.840 [TestNG-tests-1] INFO  utils.LoggerUtil - Headers: Date=Tue, 07 Apr 2026 13:06:36 GMT
+Content-Type=application/json; charset=utf-8
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Cache-Control=public, max-age=14400, s-maxage=60
+Cdn-Cache-Control=max-age=60
+Cross-Origin-Opener-Policy=same-origin
+Cross-Origin-Resource-Policy=same-origin
+Etag=W/"309-xht0adi+2R3nyR08DqinqzlyEM0"
+Nel={"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Origin-Agent-Cluster=?1
+Ratelimit-Limit=20
+Ratelimit-Policy=20;w=60
+Ratelimit-Remaining=19
+Ratelimit-Reset=60
+Referrer-Policy=strict-origin-when-cross-origin
+Report-To={"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=MwsHxyGDtgg2wHi5Mammr2Iib2GeLpw7rj%2F3p5t%2Bnoc%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1775567196"}],"max_age":3600}
+Reporting-Endpoints=heroku-nel="https://nel.heroku.com/reports?s=MwsHxyGDtgg2wHi5Mammr2Iib2GeLpw7rj%2F3p5t%2Bnoc%3D&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&ts=1775567196"
+Server=cloudflare
+Strict-Transport-Security=max-age=31536000; includeSubDomains
+Via=1.1 heroku-router
+X-Content-Type-Options=nosniff
+X-Dns-Prefetch-Control=off
+X-Download-Options=noopen
+X-Frame-Options=DENY
+X-Permitted-Cross-Domain-Policies=none
+X-Powered-By=ReqRes.in - Deploy backends in 30 seconds
+X-Ratelimit-Limit=250
+X-Ratelimit-Remaining=248
+X-Ratelimit-Reset=1775606400
+X-Reqres-Docs=https://reqres.in
+X-Reqres-Message=This API is powered by ReqRes. Deploy your own backend in 30 seconds!
+X-Reqres-Templates=https://app.reqres.in/templates
+X-Reqres-Tip=Build with your own data, not fixtures - app.reqres.in/dashboard
+X-Reqres-Trial=true
+X-Reqres-Trial-Days-Remaining=4
+X-Reqres-Trial-Expires=2026-04-11T01:40:26.038Z
+X-Reqres-Upgrade=https://app.reqres.in/upgrade
+X-Request-Id=448f67e4-4399-9b7a-d522-342d4b967640
+X-Robots-Tag=noindex, nofollow
+X-Xss-Protection=0
+Age=0
+cf-cache-status=HIT
+Content-Encoding=gzip
+CF-RAY=9e8940233a8412a3-MAA
+2026-04-07 18:35:58.841 [TestNG-tests-1] INFO  utils.LoggerUtil - Response Time: 92ms
+2026-04-07 18:35:58.843 [TestNG-tests-1] INFO  utils.LoggerUtil - Body: {
+    "data": {
+        "id": 2,
+        "email": "janet.weaver@reqres.in",
+        "first_name": "Janet",
+        "last_name": "Weaver",
+        "avatar": "https://reqres.in/img/faces/2-image.jpg"
+    },
+    "support": {
+        "url": "https://benhowdle.im/first-cto-playbook?utm_source=reqres&utm_medium=json&utm_campaign=referral",
+        "text": "Become a better CTO. A playbook of painful stories and practical advice from a two-time startup CTO."
+    },
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-04-07 18:35:58.843 [TestNG-tests-1] INFO  utils.LoggerUtil - ======================
+2026-04-07 18:35:58.845 [TestNG-tests-1] INFO  utils.LoggerUtil - Response status is successful: 200
+2026-04-07 18:35:58.846 [TestNG-tests-1] INFO  utils.LoggerUtil - Response stored with key: lastResponse
+2026-04-07 18:35:59.552 [TestNG-tests-1] DEBUG utils.LoggerUtil - Stored in GlobalContext: userId = 2
+2026-04-07 18:35:59.552 [TestNG-tests-1] INFO  utils.LoggerUtil - Extracted and stored data: userId = 2
+2026-04-07 18:35:59.579 [TestNG-tests-1] DEBUG utils.LoggerUtil - Stored in GlobalContext: userFirstName = Janet
+2026-04-07 18:35:59.580 [TestNG-tests-1] INFO  utils.LoggerUtil - Extracted and stored data: userFirstName = Janet
+2026-04-07 18:35:59.581 [TestNG-tests-1] INFO  utils.LoggerUtil - Validating the response code 
+2026-04-07 18:35:59.584 [TestNG-tests-1] INFO  utils.LoggerUtil - Validating a specific field value
+2026-04-07 18:35:59.623 [TestNG-tests-1] INFO  utils.LoggerUtil - API Client initialized successfully
+2026-04-07 18:35:59.623 [TestNG-tests-1] INFO  utils.LoggerUtil - Starting GET request for endpoint: getUserListEndpoint
+2026-04-07 18:35:59.624 [TestNG-tests-1] INFO  utils.LoggerUtil - Executing GET /api/users/?page=2 (Attempt 1/3)
+2026-04-07 18:35:59.624 [TestNG-tests-1] INFO  utils.LoggerUtil - Executing GET request to: /api/users/?page=2
+2026-04-07 18:36:00.085 [TestNG-tests-1] INFO  utils.LoggerUtil - ====== RESPONSE ======
+2026-04-07 18:36:00.085 [TestNG-tests-1] INFO  utils.LoggerUtil - Status Code: 200
+2026-04-07 18:36:00.085 [TestNG-tests-1] INFO  utils.LoggerUtil - Status Line: HTTP/1.1 200 OK
+2026-04-07 18:36:00.085 [TestNG-tests-1] INFO  utils.LoggerUtil - Headers: Date=Tue, 07 Apr 2026 13:06:37 GMT
+Content-Type=application/json; charset=utf-8
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Cache-Control=public, max-age=14400, s-maxage=60
+Cdn-Cache-Control=max-age=60
+Cross-Origin-Opener-Policy=same-origin
+Cross-Origin-Resource-Policy=same-origin
+Etag=W/"5f7-gJiYqcwcxD7jRj00kOp90HWgPMY"
+Nel={"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Origin-Agent-Cluster=?1
+Ratelimit-Limit=20
+Ratelimit-Policy=20;w=60
+Ratelimit-Remaining=19
+Ratelimit-Reset=60
+Referrer-Policy=strict-origin-when-cross-origin
+Report-To={"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=N3s8J%2FP2yrAZXOYbieIx9awyqH4N2vuw321fSSOYtvc%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1775567197"}],"max_age":3600}
+Reporting-Endpoints=heroku-nel="https://nel.heroku.com/reports?s=N3s8J%2FP2yrAZXOYbieIx9awyqH4N2vuw321fSSOYtvc%3D&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&ts=1775567197"
+Server=cloudflare
+Strict-Transport-Security=max-age=31536000; includeSubDomains
+Via=1.1 heroku-router
+X-Content-Type-Options=nosniff
+X-Dns-Prefetch-Control=off
+X-Download-Options=noopen
+X-Frame-Options=DENY
+X-Permitted-Cross-Domain-Policies=none
+X-Powered-By=ReqRes.in - Deploy backends in 30 seconds
+X-Ratelimit-Limit=250
+X-Ratelimit-Remaining=247
+X-Ratelimit-Reset=1775606400
+X-Reqres-Docs=https://reqres.in
+X-Reqres-Message=This API is powered by ReqRes. Deploy your own backend in 30 seconds!
+X-Reqres-Templates=https://app.reqres.in/templates
+X-Reqres-Tip=Generate a complete backend from a description - app.reqres.in/dashboard
+X-Reqres-Trial=true
+X-Reqres-Trial-Days-Remaining=4
+X-Reqres-Trial-Expires=2026-04-11T01:40:26.038Z
+X-Reqres-Upgrade=https://app.reqres.in/upgrade
+X-Request-Id=db55007b-4b84-faa9-8eb9-ed2b666eaf41
+X-Robots-Tag=noindex, nofollow
+X-Xss-Protection=0
+cf-cache-status=MISS
+Content-Encoding=gzip
+CF-RAY=9e894028dcb6f242-MAA
+2026-04-07 18:36:00.086 [TestNG-tests-1] INFO  utils.LoggerUtil - Response Time: 449ms
+2026-04-07 18:36:00.088 [TestNG-tests-1] INFO  utils.LoggerUtil - Body: {
+    "page": 2,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        {
+            "id": 7,
+            "email": "michael.lawson@reqres.in",
+            "first_name": "Michael",
+            "last_name": "Lawson",
+            "avatar": "https://reqres.in/img/faces/7-image.jpg"
+        },
+        {
+            "id": 8,
+            "email": "lindsay.ferguson@reqres.in",
+            "first_name": "Lindsay",
+            "last_name": "Ferguson",
+            "avatar": "https://reqres.in/img/faces/8-image.jpg"
+        },
+        {
+            "id": 9,
+            "email": "tobias.funke@reqres.in",
+            "first_name": "Tobias",
+            "last_name": "Funke",
+            "avatar": "https://reqres.in/img/faces/9-image.jpg"
+        },
+        {
+            "id": 10,
+            "email": "byron.fields@reqres.in",
+            "first_name": "Byron",
+            "last_name": "Fields",
+            "avatar": "https://reqres.in/img/faces/10-image.jpg"
+        },
+        {
+            "id": 11,
+            "email": "george.edwards@reqres.in",
+            "first_name": "George",
+            "last_name": "Edwards",
+            "avatar": "https://reqres.in/img/faces/11-image.jpg"
+        },
+        {
+            "id": 12,
+            "email": "rachel.howell@reqres.in",
+            "first_name": "Rachel",
+            "last_name": "Howell",
+            "avatar": "https://reqres.in/img/faces/12-image.jpg"
+        }
+    ],
+    "support": {
+        "url": "https://benhowdle.im/first-cto-playbook?utm_source=reqres&utm_medium=json&utm_campaign=referral",
+        "text": "Become a better CTO. A playbook of painful stories and practical advice from a two-time startup CTO."
+    },
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-04-07 18:36:00.089 [TestNG-tests-1] INFO  utils.LoggerUtil - ======================
+2026-04-07 18:36:00.089 [TestNG-tests-1] INFO  utils.LoggerUtil - Response status is successful: 200
+2026-04-07 18:36:00.089 [TestNG-tests-1] INFO  utils.LoggerUtil - Response stored with key: lastResponse
+2026-04-07 18:36:00.107 [TestNG-tests-1] DEBUG utils.LoggerUtil - Stored in GlobalContext: userId = [7, 8, 9, 10, 11, 12]
+2026-04-07 18:36:00.107 [TestNG-tests-1] INFO  utils.LoggerUtil - Extracted and stored data: userId = [7, 8, 9, 10, 11, 12]
+2026-04-07 18:36:00.126 [TestNG-tests-1] DEBUG utils.LoggerUtil - Stored in GlobalContext: userFirstName = [Michael, Lindsay, Tobias, Byron, George, Rachel]
+2026-04-07 18:36:00.126 [TestNG-tests-1] INFO  utils.LoggerUtil - Extracted and stored data: userFirstName = [Michael, Lindsay, Tobias, Byron, George, Rachel]
+2026-04-07 18:36:00.128 [TestNG-tests-1] INFO  utils.LoggerUtil - Validating the response code 
+2026-04-07 18:36:00.134 [TestNG-tests-1] INFO  utils.LoggerUtil - Validating a specific field value
+2026-04-07 18:36:00.174 [TestNG-tests-1] INFO  utils.LoggerUtil - API Client initialized successfully
+2026-04-07 18:36:00.175 [TestNG-tests-1] INFO  utils.LoggerUtil - Starting GET request for endpoint: getProductListEndpoint
+2026-04-07 18:36:00.175 [TestNG-tests-1] INFO  utils.LoggerUtil - Executing GET /api/products?page=1 (Attempt 1/3)
+2026-04-07 18:36:00.176 [TestNG-tests-1] INFO  utils.LoggerUtil - Executing GET request to: /api/products?page=1
+2026-04-07 18:36:00.611 [TestNG-tests-1] INFO  utils.LoggerUtil - ====== RESPONSE ======
+2026-04-07 18:36:00.611 [TestNG-tests-1] INFO  utils.LoggerUtil - Status Code: 200
+2026-04-07 18:36:00.611 [TestNG-tests-1] INFO  utils.LoggerUtil - Status Line: HTTP/1.1 200 OK
+2026-04-07 18:36:00.611 [TestNG-tests-1] INFO  utils.LoggerUtil - Headers: Date=Tue, 07 Apr 2026 13:06:38 GMT
+Content-Type=application/json; charset=utf-8
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Cache-Control=public, max-age=14400, s-maxage=60
+Cdn-Cache-Control=max-age=60
+Cross-Origin-Opener-Policy=same-origin
+Cross-Origin-Resource-Policy=same-origin
+Etag=W/"31a-vwdS/I5yrxrHBhOuKdrxcchUsO0"
+Nel={"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Origin-Agent-Cluster=?1
+Ratelimit-Limit=100
+Ratelimit-Policy=100;w=60
+Ratelimit-Remaining=99
+Ratelimit-Reset=60
+Referrer-Policy=strict-origin-when-cross-origin
+Report-To={"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=fI0RV254Mg3f%2BN1WoY8Rxe9rUg%2B6lqPaaVJPxcMwU9Y%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1775567198"}],"max_age":3600}
+Reporting-Endpoints=heroku-nel="https://nel.heroku.com/reports?s=fI0RV254Mg3f%2BN1WoY8Rxe9rUg%2B6lqPaaVJPxcMwU9Y%3D&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&ts=1775567198"
+Server=cloudflare
+Strict-Transport-Security=max-age=31536000; includeSubDomains
+Via=1.1 heroku-router
+X-Content-Type-Options=nosniff
+X-Dns-Prefetch-Control=off
+X-Download-Options=noopen
+X-Frame-Options=DENY
+X-Permitted-Cross-Domain-Policies=none
+X-Powered-By=ReqRes.in - Deploy backends in 30 seconds
+X-Ratelimit-Limit=250
+X-Ratelimit-Remaining=246
+X-Ratelimit-Reset=1775606400
+X-Reqres-Docs=https://reqres.in
+X-Reqres-Message=This API is powered by ReqRes. Deploy your own backend in 30 seconds!
+X-Reqres-Templates=https://app.reqres.in/templates
+X-Reqres-Tip=Add real user auth to your app with magic codes - reqres.in/docs
+X-Reqres-Trial=true
+X-Reqres-Trial-Days-Remaining=4
+X-Reqres-Trial-Expires=2026-04-11T01:40:26.038Z
+X-Reqres-Upgrade=https://app.reqres.in/upgrade
+X-Request-Id=dff78ecf-aaf6-6438-3780-739f67396565
+X-Robots-Tag=noindex, nofollow
+X-Xss-Protection=0
+cf-cache-status=MISS
+Content-Encoding=gzip
+CF-RAY=9e89402c2a33914f-MAA
+2026-04-07 18:36:00.611 [TestNG-tests-1] INFO  utils.LoggerUtil - Response Time: 429ms
+2026-04-07 18:36:00.612 [TestNG-tests-1] INFO  utils.LoggerUtil - Body: {
+    "page": 1,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        {
+            "id": 1,
+            "name": "cerulean",
+            "year": 2000,
+            "color": "#98B2D1",
+            "pantone_value": "15-4020"
+        },
+        {
+            "id": 2,
+            "name": "fuchsia rose",
+            "year": 2001,
+            "color": "#C74375",
+            "pantone_value": "17-2031"
+        },
+        {
+            "id": 3,
+            "name": "true red",
+            "year": 2002,
+            "color": "#BF1932",
+            "pantone_value": "19-1664"
+        },
+        {
+            "id": 4,
+            "name": "aqua sky",
+            "year": 2003,
+            "color": "#7BC4C4",
+            "pantone_value": "14-4811"
+        },
+        {
+            "id": 5,
+            "name": "tigerlily",
+            "year": 2004,
+            "color": "#E2583E",
+            "pantone_value": "17-1456"
+        },
+        {
+            "id": 6,
+            "name": "blue turquoise",
+            "year": 2005,
+            "color": "#53B0AE",
+            "pantone_value": "15-5217"
+        }
+    ],
+    "support": {
+        "url": "https://benhowdle.im/first-cto-playbook?utm_source=reqres&utm_medium=json&utm_campaign=referral",
+        "text": "Become a better CTO. A playbook of painful stories and practical advice from a two-time startup CTO."
+    }
+}
+2026-04-07 18:36:00.613 [TestNG-tests-1] INFO  utils.LoggerUtil - ======================
+2026-04-07 18:36:00.613 [TestNG-tests-1] INFO  utils.LoggerUtil - Response status is successful: 200
+2026-04-07 18:36:00.613 [TestNG-tests-1] INFO  utils.LoggerUtil - Response stored with key: lastResponse
+2026-04-07 18:36:00.628 [TestNG-tests-1] DEBUG utils.LoggerUtil - Stored in GlobalContext: userId = [1, 2, 3, 4, 5, 6]
+2026-04-07 18:36:00.628 [TestNG-tests-1] INFO  utils.LoggerUtil - Extracted and stored data: userId = [1, 2, 3, 4, 5, 6]
+2026-04-07 18:36:00.648 [TestNG-tests-1] DEBUG utils.LoggerUtil - Stored in GlobalContext: userFirstName = [null, null, null, null, null, null]
+2026-04-07 18:36:00.649 [TestNG-tests-1] INFO  utils.LoggerUtil - Extracted and stored data: userFirstName = [null, null, null, null, null, null]
+2026-04-07 18:36:00.650 [TestNG-tests-1] INFO  utils.LoggerUtil - Validating the response code 
+2026-04-07 18:36:00.650 [TestNG-tests-1] INFO  utils.LoggerUtil - Validating a specific field value
+2026-04-07 18:36:00.681 [TestNG-tests-1] INFO  utils.LoggerUtil - API Client initialized successfully
+2026-04-07 18:36:00.686 [TestNG-tests-1] INFO  utils.LoggerUtil - here we are creating the request body from excel data and json file
+2026-04-07 18:36:00.707 [TestNG-tests-1] INFO  utils.LoggerUtil - Using environment-specific Excel: src/test/resources/testdata/data-QA.xlsx
+2026-04-07 18:36:01.390 [TestNG-tests-1] INFO  utils.LoggerUtil - Successfully read 2 data points from Excel row 1
+2026-04-07 18:36:01.477 [TestNG-tests-1] INFO  utils.LoggerUtil - Reading JSON file: src/test/resources/payloads/updateUser.json
+2026-04-07 18:36:01.479 [TestNG-tests-1] INFO  utils.LoggerUtil - running POST API
+2026-04-07 18:36:01.480 [TestNG-tests-1] INFO  utils.LoggerUtil - Executing POST /api/register (Attempt 1/3)
+2026-04-07 18:36:01.480 [TestNG-tests-1] INFO  utils.LoggerUtil - Executing POST request to: /api/register
+2026-04-07 18:36:01.481 [TestNG-tests-1] INFO  utils.LoggerUtil - Payload: {
+  "email": "eve.holt@reqres.in",
+  "password": "pistol"
+}
+
+2026-04-07 18:36:01.935 [TestNG-tests-1] INFO  utils.LoggerUtil - ====== RESPONSE ======
+2026-04-07 18:36:01.936 [TestNG-tests-1] INFO  utils.LoggerUtil - Status Code: 200
+2026-04-07 18:36:01.936 [TestNG-tests-1] INFO  utils.LoggerUtil - Status Line: HTTP/1.1 200 OK
+2026-04-07 18:36:01.936 [TestNG-tests-1] INFO  utils.LoggerUtil - Headers: Date=Tue, 07 Apr 2026 13:06:39 GMT
+Content-Type=application/json; charset=utf-8
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Cache-Control=no-store
+Cross-Origin-Opener-Policy=same-origin
+Cross-Origin-Resource-Policy=same-origin
+Etag=W/"1bc-xRTwNVgWh6h88YSuenEbptBlbOc"
+Nel={"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Origin-Agent-Cluster=?1
+Referrer-Policy=strict-origin-when-cross-origin
+Report-To={"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=6hJRmbBA0%2FOjY%2BRBCzOJdaGYBme5ArxRePmH0aJ0Dis%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1775567199"}],"max_age":3600}
+Reporting-Endpoints=heroku-nel="https://nel.heroku.com/reports?s=6hJRmbBA0%2FOjY%2BRBCzOJdaGYBme5ArxRePmH0aJ0Dis%3D&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&ts=1775567199"
+Server=cloudflare
+Strict-Transport-Security=max-age=31536000; includeSubDomains
+Via=1.1 heroku-router
+X-Content-Type-Options=nosniff
+X-Dns-Prefetch-Control=off
+X-Download-Options=noopen
+X-Frame-Options=DENY
+X-Permitted-Cross-Domain-Policies=none
+X-Powered-By=ReqRes.in - Deploy backends in 30 seconds
+X-Ratelimit-Limit=250
+X-Ratelimit-Remaining=245
+X-Ratelimit-Reset=1775606400
+X-Reqres-Docs=https://reqres.in
+X-Reqres-Message=This API is powered by ReqRes. Deploy your own backend in 30 seconds!
+X-Reqres-Templates=https://app.reqres.in/templates
+X-Reqres-Tip=Create your own backend with persistent data - app.reqres.in/dashboard
+X-Reqres-Trial=true
+X-Reqres-Trial-Days-Remaining=4
+X-Reqres-Trial-Expires=2026-04-11T01:40:26.038Z
+X-Reqres-Upgrade=https://app.reqres.in/upgrade
+X-Request-Id=07a7ab32-77bd-0cde-4133-c150b91103fd
+X-Robots-Tag=noindex, nofollow
+X-Xss-Protection=0
+cf-cache-status=DYNAMIC
+Content-Encoding=gzip
+CF-RAY=9e8940347e9e7f93-MAA
+2026-04-07 18:36:01.937 [TestNG-tests-1] INFO  utils.LoggerUtil - Response Time: 445ms
+2026-04-07 18:36:01.938 [TestNG-tests-1] INFO  utils.LoggerUtil - Body: {
+    "id": 4,
+    "token": "QpwL5tke4Pnpja7X4",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-04-07 18:36:01.938 [TestNG-tests-1] INFO  utils.LoggerUtil - ======================
+2026-04-07 18:36:01.939 [TestNG-tests-1] INFO  utils.LoggerUtil - Validating the response code 
+2026-04-07 18:36:01.940 [TestNG-tests-1] INFO  utils.LoggerUtil - validating the field value
+2026-04-07 18:36:01.952 [TestNG-tests-1] INFO  utils.LoggerUtil - validating the field value
+2026-04-07 18:36:01.972 [TestNG-tests-1] INFO  utils.LoggerUtil - API Client initialized successfully
+2026-04-07 18:36:01.973 [TestNG-tests-1] INFO  utils.LoggerUtil - here we are creating the request body from excel data and json file
+2026-04-07 18:36:01.973 [TestNG-tests-1] INFO  utils.LoggerUtil - Using environment-specific Excel: src/test/resources/testdata/data-QA.xlsx
+2026-04-07 18:36:02.003 [TestNG-tests-1] INFO  utils.LoggerUtil - Successfully read 2 data points from Excel row 2
+2026-04-07 18:36:02.029 [TestNG-tests-1] INFO  utils.LoggerUtil - Reading JSON file: src/test/resources/payloads/updateUser.json
+2026-04-07 18:36:02.031 [TestNG-tests-1] INFO  utils.LoggerUtil - running POST API
+2026-04-07 18:36:02.032 [TestNG-tests-1] INFO  utils.LoggerUtil - Executing POST /api/login (Attempt 1/3)
+2026-04-07 18:36:02.033 [TestNG-tests-1] INFO  utils.LoggerUtil - Executing POST request to: /api/login
+2026-04-07 18:36:02.033 [TestNG-tests-1] INFO  utils.LoggerUtil - Payload: {
+  "email": "eve.holt@reqres.in",
+  "password": "cityslicka"
+}
+
+2026-04-07 18:36:02.318 [TestNG-tests-1] INFO  utils.LoggerUtil - ====== RESPONSE ======
+2026-04-07 18:36:02.319 [TestNG-tests-1] INFO  utils.LoggerUtil - Status Code: 200
+2026-04-07 18:36:02.319 [TestNG-tests-1] INFO  utils.LoggerUtil - Status Line: HTTP/1.1 200 OK
+2026-04-07 18:36:02.319 [TestNG-tests-1] INFO  utils.LoggerUtil - Headers: Date=Tue, 07 Apr 2026 13:06:40 GMT
+Content-Type=application/json; charset=utf-8
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Cache-Control=no-store
+Cross-Origin-Opener-Policy=same-origin
+Cross-Origin-Resource-Policy=same-origin
+Etag=W/"1b5-hRvA2JEEK9A0VJYTw8+bhNg/wj0"
+Nel={"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Origin-Agent-Cluster=?1
+Referrer-Policy=strict-origin-when-cross-origin
+Report-To={"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=dUzjfNZ2zXzc8pHkgE0f%2FOinVU5NBC3x3I0LPGEVYe4%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1775567200"}],"max_age":3600}
+Reporting-Endpoints=heroku-nel="https://nel.heroku.com/reports?s=dUzjfNZ2zXzc8pHkgE0f%2FOinVU5NBC3x3I0LPGEVYe4%3D&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&ts=1775567200"
+Server=cloudflare
+Strict-Transport-Security=max-age=31536000; includeSubDomains
+Via=1.1 heroku-router
+X-Content-Type-Options=nosniff
+X-Dns-Prefetch-Control=off
+X-Download-Options=noopen
+X-Frame-Options=DENY
+X-Permitted-Cross-Domain-Policies=none
+X-Powered-By=ReqRes.in - Deploy backends in 30 seconds
+X-Ratelimit-Limit=250
+X-Ratelimit-Remaining=244
+X-Ratelimit-Reset=1775606400
+X-Reqres-Docs=https://reqres.in
+X-Reqres-Message=This API is powered by ReqRes. Deploy your own backend in 30 seconds!
+X-Reqres-Templates=https://app.reqres.in/templates
+X-Reqres-Tip=Add real user auth to your app with magic codes - reqres.in/docs
+X-Reqres-Trial=true
+X-Reqres-Trial-Days-Remaining=4
+X-Reqres-Trial-Expires=2026-04-11T01:40:26.038Z
+X-Reqres-Upgrade=https://app.reqres.in/upgrade
+X-Request-Id=f6cb354e-f0c3-3785-b683-aa03ca0a0a67
+X-Robots-Tag=noindex, nofollow
+X-Xss-Protection=0
+cf-cache-status=DYNAMIC
+Content-Encoding=gzip
+CF-RAY=9e894037eb0a802e-MAA
+2026-04-07 18:36:02.320 [TestNG-tests-1] INFO  utils.LoggerUtil - Response Time: 281ms
+2026-04-07 18:36:02.321 [TestNG-tests-1] INFO  utils.LoggerUtil - Body: {
+    "token": "QpwL5tke4Pnpja7X4",
+    "_meta": {
+        "powered_by": "ReqRes",
+        "docs_url": "https://app.reqres.in/documentation",
+        "upgrade_url": "https://app.reqres.in/upgrade",
+        "example_url": "https://app.reqres.in/examples/notes-app",
+        "variant": "v1_a",
+        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",
+        "cta": {
+            "label": "See example app",
+            "url": "https://app.reqres.in/examples/notes-app"
+        },
+        "context": "legacy_success"
+    }
+}
+2026-04-07 18:36:02.322 [TestNG-tests-1] INFO  utils.LoggerUtil - ======================
+2026-04-07 18:36:02.324 [TestNG-tests-1] INFO  utils.LoggerUtil - Validating the response code 
+2026-04-07 18:36:02.324 [TestNG-tests-1] INFO  utils.LoggerUtil - validating the field value
+2026-04-07 18:36:04.543 [main] INFO  utils.LoggerUtil - ========================================
+2026-04-07 18:36:04.543 [main] INFO  utils.LoggerUtil - Finishing API automation suite
+2026-04-07 18:36:04.543 [main] INFO  utils.LoggerUtil - ========================================
+2026-04-07 18:36:04.543 [main] INFO  utils.LoggerUtil - ======= GlobalContext Dump =======
+2026-04-07 18:36:04.544 [main] INFO  utils.LoggerUtil - userFirstName => [null, null, null, null, null, null]
+2026-04-07 18:36:04.544 [main] INFO  utils.LoggerUtil - userId => [1, 2, 3, 4, 5, 6]
+2026-04-07 18:36:04.545 [main] INFO  utils.LoggerUtil - ===================================
+2026-04-07 18:36:04.639 [main] INFO  utils.LoggerUtil - Extent reports flushed successfully
+2026-04-07 18:36:04.640 [main] INFO  utils.LoggerUtil - Extent reports flushed successfully

@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="API Automation Suite" parallel="tests" thread-count="2">
+    <test name="Cucumber BDD Tests">
+        <classes>
+            <class name="runners.TestNGRunner"/>
+        </classes>
+    </test>
+    <test name="Sample API TestNG Tests">
+        <classes>
+            <class name="tests.SampleAPITest"/>
+        </classes>
+    </test>
+</suite>
