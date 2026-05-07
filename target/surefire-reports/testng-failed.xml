@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [API Automation Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="2" parallel="tests" name="Sample API TestNG Tests(failed)" verbose="0">
+    <classes>
+      <class name="tests.SampleAPITest">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="setUpTest"/>
+          <include name="beforeSuite"/>
+          <include name="validateGetUserApi"/>
+          <include name="tearDownTest"/>
+        </methods>
+      </class> <!-- tests.SampleAPITest -->
+    </classes>
+  </test> <!-- Sample API TestNG Tests(failed) -->
+</suite> <!-- Failed suite [API Automation Suite] -->

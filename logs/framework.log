@@ -3910,3 +3910,667 @@ Caused by: java.lang.IllegalArgumentException: Invalid number of path parameters
 2026-05-07 19:43:05.744 [TestNG-tests-2] INFO  utils.LoggerUtil - Executing GET request to: /api/users/{{userId}}
 2026-05-07 19:45:10.018 [TestNG-tests-2] DEBUG utils.LoggerUtil - Not in a data-driven context; using endpoint as-is
 2026-05-07 19:45:10.036 [TestNG-tests-2] INFO  utils.LoggerUtil - Resolved endpoint with Excel data: /api/users/{{userId}}
+2026-05-07 20:42:40.910 [main] INFO  utils.LoggerUtil - ========================================
+2026-05-07 20:42:40.910 [main] INFO  utils.LoggerUtil - Starting API automation suite execution
+2026-05-07 20:42:40.910 [main] INFO  utils.LoggerUtil - ========================================
+2026-05-07 20:42:40.910 [main] INFO  utils.LoggerUtil - Environment initialized
+2026-05-07 20:42:40.910 [main] INFO  utils.LoggerUtil - Using environment: QA
+2026-05-07 20:42:40.910 [main] INFO  utils.LoggerUtil - All required directories verified
+2026-05-07 20:42:40.910 [main] INFO  utils.LoggerUtil - Environment initialized
+2026-05-07 20:42:40.910 [main] DEBUG utils.LoggerUtil - Default configuration loaded
+2026-05-07 20:42:40.910 [main] DEBUG utils.LoggerUtil - Environment configuration loaded
+2026-05-07 20:42:40.910 [main] INFO  utils.LoggerUtil - Configuration loaded successfully
+2026-05-07 20:42:40.910 [main] INFO  utils.LoggerUtil - Configuration properties loaded successfully for environment: QA
+2026-05-07 20:42:41.195 [main] INFO  utils.LoggerUtil - Extent reports initialized successfully
+2026-05-07 20:42:41.195 [main] INFO  utils.LoggerUtil - Extent reports initialized
+2026-05-07 20:42:41.195 [main] INFO  utils.LoggerUtil - GlobalContext cleared
+2026-05-07 20:42:41.195 [main] INFO  utils.LoggerUtil - Global context cleared for fresh start
+2026-05-07 20:42:42.453 [TestNG-tests-2] INFO  utils.LoggerUtil - API Client initialized successfully
+2026-05-07 20:42:42.598 [TestNG-tests-2] INFO  utils.LoggerUtil - Executing GET /api/users/{{userId}} (Attempt 1/3)
+2026-05-07 20:42:42.598 [TestNG-tests-2] INFO  utils.LoggerUtil - Executing GET request to: /api/users/{{userId}}
+2026-05-07 20:42:42.610 [TestNG-tests-2] DEBUG utils.LoggerUtil - Not in a data-driven context; using endpoint as-is
+2026-05-07 20:42:42.610 [TestNG-tests-2] INFO  utils.LoggerUtil - Resolved endpoint with Excel data: /api/users/{{userId}}
+2026-05-07 20:42:42.906 [TestNG-tests-1] INFO  utils.LoggerUtil - === Starting Scenario: Run GET request for each user test case in Excel ===
+2026-05-07 20:42:42.935 [TestNG-tests-1] INFO  utils.LoggerUtil - API Client initialized successfully
+2026-05-07 20:42:42.935 [TestNG-tests-1] INFO  utils.LoggerUtil - Loading test data for scenario: GetUserDataDriven
+2026-05-07 20:42:42.939 [TestNG-tests-1] INFO  utils.LoggerUtil - Loading test data for scenario: GetUserDataDriven
+2026-05-07 20:42:42.939 [TestNG-tests-1] INFO  utils.LoggerUtil - Loading Excel data | File: src/test/resources/testdata/GetUserDataDriven.xlsx | Sheet: GetUserDataDriven
+2026-05-07 20:42:42.972 [TestNG-tests-1] INFO  utils.LoggerUtil - Using default Excel file
+2026-05-07 20:42:43.153 [TestNG-tests-2] ERROR utils.LoggerUtil - Error executing GET request
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: {userId.
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.internal.RequestSpecificationImpl.assertCorrectNumberOfPathParams(RequestSpecificationImpl.groovy:1248) ~[rest-assured-4.3.3.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:176) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1135) ~[rest-assured-4.3.3.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30) ~[rest-assured-4.3.3.jar:?]
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source) ~[?:?]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.filter.Filter$filter.call(Unknown Source) ~[?:?]
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72) ~[rest-assured-4.3.3.jar:?]
+	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56) ~[rest-assured-4.3.3.jar:?]
+	at io.restassured.filter.Filter$filter.call(Unknown Source) ~[?:?]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:157) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72) ~[rest-assured-4.3.3.jar:?]
+	at io.restassured.filter.FilterContext$next.call(Unknown Source) ~[?:?]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1655) ~[rest-assured-4.3.3.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661) ~[rest-assured-4.3.3.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:171) ~[rest-assured-4.3.3.jar:?]
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy) ~[rest-assured-4.3.3.jar:?]
+	at client.APIClient.executeGet(APIClient.java:70) ~[classes/:?]
+	at client.APIClient.lambda$get$0(APIClient.java:46) ~[classes/:?]
+	at utils.RetryUtil.executeWithRetry(RetryUtil.java:27) ~[classes/:?]
+	at client.APIClient.get(APIClient.java:44) ~[classes/:?]
+	at client.APIClient.get(APIClient.java:36) ~[classes/:?]
+	at tests.SampleAPITest.validateGetUserApi(SampleAPITest.java:44) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124) ~[testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583) ~[testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719) ~[testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989) ~[testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125) ~[testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109) ~[testng-6.14.3.jar:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:648) ~[testng-6.14.3.jar:?]
+	at org.testng.TestRunner.run(TestRunner.java:505) ~[testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455) ~[testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40) ~[testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489) ~[testng-6.14.3.jar:?]
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52) ~[testng-6.14.3.jar:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:829) ~[?:?]
+2026-05-07 20:42:43.176 [TestNG-tests-2] INFO  utils.LoggerUtil - Retrying after 1000ms...
+2026-05-07 20:42:44.040 [TestNG-tests-1] INFO  utils.LoggerUtil - Excel rows read successfully
+2026-05-07 20:42:44.170 [TestNG-tests-1] INFO  utils.LoggerUtil - DataDrivenContext initialized | File: src/test/resources/testdata/GetUserDataDriven.xlsx | Sheet: GetUserDataDriven | Total Rows: 4
+2026-05-07 20:42:44.170 [TestNG-tests-1] INFO  utils.LoggerUtil - Test data loaded successfully. Total rows: 4
+2026-05-07 20:42:44.174 [TestNG-tests-1] INFO  utils.LoggerUtil - Executing GET request for each test data row
+2026-05-07 20:42:44.177 [TestNG-tests-1] DEBUG utils.LoggerUtil - Checking for more rows | Current: 0 | Total: 4 | HasMore: true
+2026-05-07 20:42:44.177 [TestNG-tests-1] INFO  utils.LoggerUtil - Moved to row 1 of 4
+2026-05-07 20:42:44.177 [TestNG-tests-1] INFO  utils.LoggerUtil - Moved to row #1
+2026-05-07 20:42:44.177 [TestNG-tests-1] DEBUG utils.LoggerUtil - Stored in GlobalContext: currentRowData = {Expected_ID=2, Expected_LastName=Weaver, Expected_FirstName=Janet, Test_Case_Name=Positive_ValidUser_1, userId=2, Status_Code=200}
+2026-05-07 20:42:44.177 [TestNG-tests-1] DEBUG utils.LoggerUtil - Stored in GlobalContext: currentRowIndex = 1
+2026-05-07 20:42:44.177 [TestNG-tests-1] INFO  utils.LoggerUtil - Current test data: {Expected_ID=2, Expected_LastName=Weaver, Expected_FirstName=Janet, Test_Case_Name=Positive_ValidUser_1, userId=2, Status_Code=200}
+2026-05-07 20:42:44.177 [TestNG-tests-1] INFO  utils.LoggerUtil - Calling GET endpoint: /api/users/2
+2026-05-07 20:42:44.177 [TestNG-tests-1] INFO  utils.LoggerUtil - Executing GET /api/users/2 (Attempt 1/3)
+2026-05-07 20:42:44.177 [TestNG-tests-1] INFO  utils.LoggerUtil - Executing GET request to: /api/users/2
+2026-05-07 20:42:44.177 [TestNG-tests-1] INFO  utils.LoggerUtil - Resolved endpoint with Excel data: /api/users/2
+2026-05-07 20:42:44.184 [TestNG-tests-2] INFO  utils.LoggerUtil - Executing GET /api/users/{{userId}} (Attempt 2/3)
+2026-05-07 20:42:44.184 [TestNG-tests-2] INFO  utils.LoggerUtil - Executing GET request to: /api/users/{{userId}}
+2026-05-07 20:42:44.184 [TestNG-tests-2] DEBUG utils.LoggerUtil - Not in a data-driven context; using endpoint as-is
+2026-05-07 20:42:44.184 [TestNG-tests-2] INFO  utils.LoggerUtil - Resolved endpoint with Excel data: /api/users/{{userId}}
+2026-05-07 20:42:44.200 [TestNG-tests-2] ERROR utils.LoggerUtil - Error executing GET request
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: {userId.
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.internal.RequestSpecificationImpl.assertCorrectNumberOfPathParams(RequestSpecificationImpl.groovy:1248) ~[rest-assured-4.3.3.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:176) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1135) ~[rest-assured-4.3.3.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30) ~[rest-assured-4.3.3.jar:?]
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source) ~[?:?]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.filter.Filter$filter.call(Unknown Source) ~[?:?]
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72) ~[rest-assured-4.3.3.jar:?]
+	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56) ~[rest-assured-4.3.3.jar:?]
+	at io.restassured.filter.Filter$filter.call(Unknown Source) ~[?:?]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source) ~[?:?]
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72) ~[rest-assured-4.3.3.jar:?]
+	at io.restassured.filter.FilterContext$next.call(Unknown Source) ~[?:?]
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1655) ~[rest-assured-4.3.3.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661) ~[rest-assured-4.3.3.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:171) ~[rest-assured-4.3.3.jar:?]
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy) ~[rest-assured-4.3.3.jar:?]
+	at client.APIClient.executeGet(APIClient.java:70) ~[classes/:?]
+	at client.APIClient.lambda$get$0(APIClient.java:46) ~[classes/:?]
+	at utils.RetryUtil.executeWithRetry(RetryUtil.java:27) ~[classes/:?]
+	at client.APIClient.get(APIClient.java:44) ~[classes/:?]
+	at client.APIClient.get(APIClient.java:36) ~[classes/:?]
+	at tests.SampleAPITest.validateGetUserApi(SampleAPITest.java:44) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124) ~[testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583) ~[testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719) ~[testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989) ~[testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125) ~[testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109) ~[testng-6.14.3.jar:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:648) ~[testng-6.14.3.jar:?]
+	at org.testng.TestRunner.run(TestRunner.java:505) ~[testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455) ~[testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40) ~[testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489) ~[testng-6.14.3.jar:?]
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52) ~[testng-6.14.3.jar:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:829) ~[?:?]
+2026-05-07 20:42:44.211 [TestNG-tests-2] INFO  utils.LoggerUtil - Retrying after 2000ms...
+2026-05-07 20:42:45.552 [TestNG-tests-1] INFO  utils.LoggerUtil - ====== RESPONSE ======
+2026-05-07 20:42:45.552 [TestNG-tests-1] INFO  utils.LoggerUtil - Status Code: 200
+2026-05-07 20:42:45.552 [TestNG-tests-1] INFO  utils.LoggerUtil - Status Line: HTTP/1.1 200 OK
+2026-05-07 20:42:45.552 [TestNG-tests-1] INFO  utils.LoggerUtil - Headers: Date=Thu, 07 May 2026 15:13:02 GMT_Content-Type=application/json; charset=utf-8_Transfer-Encoding=chunked_Connection=keep-alive_Access-Control-Allow-Origin=*_Cache-Control=public, max-age=14400, s-maxage=60_Cdn-Cache-Control=max-age=60_Cross-Origin-Opener-Policy=same-origin_Cross-Origin-Resource-Policy=same-origin_Etag=W/"309-xht0adi+2R3nyR08DqinqzlyEM0"_Nel={"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}_Origin-Agent-Cluster=?1_Ratelimit-Limit=20_Ratelimit-Policy=20;w=60_Ratelimit-Remaining=19_Ratelimit-Reset=60_Referrer-Policy=strict-origin-when-cross-origin_Report-To={"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=PVjKAfY6wQrZUtDextSMLJ5FVHSCuXE1VbglfeoEWXw%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1778166782"}],"max_age":3600}_Reporting-Endpoints=heroku-nel="https://nel.heroku.com/reports?s=PVjKAfY6wQrZUtDextSMLJ5FVHSCuXE1VbglfeoEWXw%3D&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&ts=1778166782"_Server=cloudflare_Strict-Transport-Security=max-age=31536000; includeSubDomains_Via=1.1 heroku-router_X-Content-Type-Options=nosniff_X-Dns-Prefetch-Control=off_X-Download-Options=noopen_X-Frame-Options=DENY_X-Permitted-Cross-Domain-Policies=none_X-Powered-By=ReqRes.in - Deploy backends in 30 seconds_X-Ratelimit-Limit=250_X-Ratelimit-Remaining=228_X-Ratelimit-Reset=1778198400_X-Reqres-Docs=https://reqres.in_X-Reqres-Message=This API is powered by ReqRes. Deploy your own backend in 30 seconds!_X-Reqres-Templates=https://app.reqres.in/templates_X-Reqres-Tip=Create your own backend with persistent data - app.reqres.in/dashboard_X-Reqres-Trial=true_X-Reqres-Trial-Days-Remaining=0_X-Reqres-Trial-Expires=2026-04-11T01:40:26.038Z_X-Reqres-Upgrade=https://app.reqres.in/upgrade_X-Request-Id=96d46bbc-b942-b16b-c0d8-1ba3976fe6f3_X-Robots-Tag=noindex, nofollow_X-Xss-Protection=0_cf-cache-status=MISS_Content-Encoding=gzip_CF-RAY=9f812a921a683bd0-BOM
+2026-05-07 20:42:45.552 [TestNG-tests-1] INFO  utils.LoggerUtil - Response Time: 1352ms
+2026-05-07 20:42:45.675 [TestNG-tests-1] INFO  utils.LoggerUtil - Body: {_    "data": {_        "id": 2,_        "email": "janet.weaver@reqres.in",_        "first_name": "Janet",_        "last_name": "Weaver",_        "avatar": "https://reqres.in/img/faces/2-image.jpg"_    },_    "support": {_        "url": "https://benhowdle.im/first-cto-playbook?utm_source=reqres&utm_medium=json&utm_campaign=referral",_        "text": "Become a better CTO. A playbook of painful stories and practical advice from a two-time startup CTO."_    },_    "_meta": {_        "powered_by": "ReqRes",_        "docs_url": "https://app.reqres.in/documentation",_        "upgrade_url": "https://app.reqres.in/upgrade",_        "example_url": "https://app.reqres.in/examples/notes-app",_        "variant": "v1_a",_        "message": "Your data persists here. Add auth, logs, and custom schemas to build a real backend.",_        "cta": {_            "label": "See example app",_            "url": "https://app.reqres.in/examples/notes-app"_        },_        "context": "legacy_success"_    }_}
+2026-05-07 20:42:45.675 [TestNG-tests-1] INFO  utils.LoggerUtil - ======================
+2026-05-07 20:42:45.677 [TestNG-tests-1] INFO  utils.LoggerUtil - Response stored with key: lastResponse
+2026-05-07 20:42:45.677 [TestNG-tests-1] INFO  utils.LoggerUtil - GET request completed. Status: 200
+2026-05-07 20:42:45.681 [TestNG-tests-1] INFO  utils.LoggerUtil - Verifying status code matches Excel
+2026-05-07 20:42:45.681 [TestNG-tests-1] INFO  utils.LoggerUtil - Validating status code from Excel column: Status_Code
+2026-05-07 20:42:45.683 [TestNG-tests-1] DEBUG utils.LoggerUtil - Column 'Status_Code' value: 200
+2026-05-07 20:42:45.683 [TestNG-tests-1] INFO  utils.LoggerUtil - ? Status Code Match | Expected: 200 | Actual: 200
+2026-05-07 20:42:45.687 [TestNG-tests-1] INFO  utils.LoggerUtil - Verifying response field: data.id against Excel column: Expected_ID
+2026-05-07 20:42:45.687 [TestNG-tests-1] INFO  utils.LoggerUtil - Validating response field | JsonPath: data.id | Excel Column: Expected_ID
+2026-05-07 20:42:46.218 [TestNG-tests-2] INFO  utils.LoggerUtil - Executing GET /api/users/{{userId}} (Attempt 3/3)
+2026-05-07 20:42:46.221 [TestNG-tests-2] INFO  utils.LoggerUtil - Executing GET request to: /api/users/{{userId}}
+2026-05-07 20:42:46.222 [TestNG-tests-2] DEBUG utils.LoggerUtil - Not in a data-driven context; using endpoint as-is
+2026-05-07 20:42:46.222 [TestNG-tests-2] INFO  utils.LoggerUtil - Resolved endpoint with Excel data: /api/users/{{userId}}
+2026-05-07 20:42:46.234 [TestNG-tests-2] ERROR utils.LoggerUtil - Error executing GET request
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: {userId.
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.internal.RequestSpecificationImpl.assertCorrectNumberOfPathParams(RequestSpecificationImpl.groovy:1248) ~[rest-assured-4.3.3.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:176) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1135) ~[rest-assured-4.3.3.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30) ~[rest-assured-4.3.3.jar:?]
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source) ~[?:?]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.filter.Filter$filter.call(Unknown Source) ~[?:?]
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72) ~[rest-assured-4.3.3.jar:?]
+	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56) ~[rest-assured-4.3.3.jar:?]
+	at io.restassured.filter.Filter$filter.call(Unknown Source) ~[?:?]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source) ~[?:?]
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72) ~[rest-assured-4.3.3.jar:?]
+	at io.restassured.filter.FilterContext$next.call(Unknown Source) ~[?:?]
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1655) ~[rest-assured-4.3.3.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661) ~[rest-assured-4.3.3.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:171) ~[rest-assured-4.3.3.jar:?]
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy) ~[rest-assured-4.3.3.jar:?]
+	at client.APIClient.executeGet(APIClient.java:70) ~[classes/:?]
+	at client.APIClient.lambda$get$0(APIClient.java:46) ~[classes/:?]
+	at utils.RetryUtil.executeWithRetry(RetryUtil.java:27) ~[classes/:?]
+	at client.APIClient.get(APIClient.java:44) ~[classes/:?]
+	at client.APIClient.get(APIClient.java:36) ~[classes/:?]
+	at tests.SampleAPITest.validateGetUserApi(SampleAPITest.java:44) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124) ~[testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583) ~[testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719) ~[testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989) ~[testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125) ~[testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109) ~[testng-6.14.3.jar:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:648) ~[testng-6.14.3.jar:?]
+	at org.testng.TestRunner.run(TestRunner.java:505) ~[testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455) ~[testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40) ~[testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489) ~[testng-6.14.3.jar:?]
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52) ~[testng-6.14.3.jar:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:829) ~[?:?]
+2026-05-07 20:42:46.246 [TestNG-tests-2] ERROR utils.LoggerUtil - Operation GET /api/users/{{userId}} failed after 3 attempts
+2026-05-07 20:42:46.247 [TestNG-tests-2] ERROR utils.LoggerUtil - GET request failed for endpoint: /api/users/{{userId}}
+java.lang.RuntimeException: Operation failed after 3 attempts
+	at utils.RetryUtil.executeWithRetry(RetryUtil.java:47) ~[classes/:?]
+	at client.APIClient.get(APIClient.java:44) ~[classes/:?]
+	at client.APIClient.get(APIClient.java:36) ~[classes/:?]
+	at tests.SampleAPITest.validateGetUserApi(SampleAPITest.java:44) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124) ~[testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583) ~[testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719) ~[testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989) ~[testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125) ~[testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109) ~[testng-6.14.3.jar:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:648) ~[testng-6.14.3.jar:?]
+	at org.testng.TestRunner.run(TestRunner.java:505) ~[testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455) ~[testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40) ~[testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489) ~[testng-6.14.3.jar:?]
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52) ~[testng-6.14.3.jar:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:829) ~[?:?]
+Caused by: exceptions.APIException: GET request execution failed
+	at client.APIClient.executeGet(APIClient.java:86) ~[classes/:?]
+	at client.APIClient.lambda$get$0(APIClient.java:46) ~[classes/:?]
+	at utils.RetryUtil.executeWithRetry(RetryUtil.java:27) ~[classes/:?]
+	... 23 more
+Caused by: java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: {userId.
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.internal.RequestSpecificationImpl.assertCorrectNumberOfPathParams(RequestSpecificationImpl.groovy:1248) ~[rest-assured-4.3.3.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:176) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1135) ~[rest-assured-4.3.3.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30) ~[rest-assured-4.3.3.jar:?]
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source) ~[?:?]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.filter.Filter$filter.call(Unknown Source) ~[?:?]
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72) ~[rest-assured-4.3.3.jar:?]
+	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56) ~[rest-assured-4.3.3.jar:?]
+	at io.restassured.filter.Filter$filter.call(Unknown Source) ~[?:?]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source) ~[?:?]
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72) ~[rest-assured-4.3.3.jar:?]
+	at io.restassured.filter.FilterContext$next.call(Unknown Source) ~[?:?]
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1655) ~[rest-assured-4.3.3.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661) ~[rest-assured-4.3.3.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:171) ~[rest-assured-4.3.3.jar:?]
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy) ~[rest-assured-4.3.3.jar:?]
+	at client.APIClient.executeGet(APIClient.java:70) ~[classes/:?]
+	at client.APIClient.lambda$get$0(APIClient.java:46) ~[classes/:?]
+	at utils.RetryUtil.executeWithRetry(RetryUtil.java:27) ~[classes/:?]
+	... 23 more
+2026-05-07 20:42:46.256 [TestNG-tests-2] ERROR utils.LoggerUtil - Test validateGetUserApi failed
+exceptions.APIException: GET request failed for endpoint: /api/users/{{userId}}
+	at client.APIClient.get(APIClient.java:52) ~[classes/:?]
+	at client.APIClient.get(APIClient.java:36) ~[classes/:?]
+	at tests.SampleAPITest.validateGetUserApi(SampleAPITest.java:44) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124) ~[testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583) ~[testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719) ~[testng-6.14.3.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989) ~[testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125) ~[testng-6.14.3.jar:?]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109) ~[testng-6.14.3.jar:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:648) ~[testng-6.14.3.jar:?]
+	at org.testng.TestRunner.run(TestRunner.java:505) ~[testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455) ~[testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40) ~[testng-6.14.3.jar:?]
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489) ~[testng-6.14.3.jar:?]
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52) ~[testng-6.14.3.jar:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:829) ~[?:?]
+Caused by: java.lang.RuntimeException: Operation failed after 3 attempts
+	at utils.RetryUtil.executeWithRetry(RetryUtil.java:47) ~[classes/:?]
+	at client.APIClient.get(APIClient.java:44) ~[classes/:?]
+	... 22 more
+Caused by: exceptions.APIException: GET request execution failed
+	at client.APIClient.executeGet(APIClient.java:86) ~[classes/:?]
+	at client.APIClient.lambda$get$0(APIClient.java:46) ~[classes/:?]
+	at utils.RetryUtil.executeWithRetry(RetryUtil.java:27) ~[classes/:?]
+	at client.APIClient.get(APIClient.java:44) ~[classes/:?]
+	... 22 more
+Caused by: java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: {userId.
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.internal.RequestSpecificationImpl.assertCorrectNumberOfPathParams(RequestSpecificationImpl.groovy:1248) ~[rest-assured-4.3.3.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:176) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1135) ~[rest-assured-4.3.3.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30) ~[rest-assured-4.3.3.jar:?]
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source) ~[?:?]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.filter.Filter$filter.call(Unknown Source) ~[?:?]
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72) ~[rest-assured-4.3.3.jar:?]
+	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56) ~[rest-assured-4.3.3.jar:?]
+	at io.restassured.filter.Filter$filter.call(Unknown Source) ~[?:?]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source) ~[?:?]
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72) ~[rest-assured-4.3.3.jar:?]
+	at io.restassured.filter.FilterContext$next.call(Unknown Source) ~[?:?]
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1655) ~[rest-assured-4.3.3.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1661) ~[rest-assured-4.3.3.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:819) ~[groovy-3.0.7.jar:3.0.7]
+	at groovy.lang.GroovyObject.invokeMethod(GroovyObject.java:39) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:45) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:55) ~[groovy-3.0.7.jar:3.0.7]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203) ~[groovy-3.0.7.jar:3.0.7]
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:171) ~[rest-assured-4.3.3.jar:?]
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy) ~[rest-assured-4.3.3.jar:?]
+	at client.APIClient.executeGet(APIClient.java:70) ~[classes/:?]
+	at client.APIClient.lambda$get$0(APIClient.java:46) ~[classes/:?]
+	at utils.RetryUtil.executeWithRetry(RetryUtil.java:27) ~[classes/:?]
+	at client.APIClient.get(APIClient.java:44) ~[classes/:?]
+	... 22 more
+2026-05-07 20:42:47.213 [TestNG-tests-1] DEBUG utils.LoggerUtil - Column 'Expected_ID' value: 2
+2026-05-07 20:42:47.214 [TestNG-tests-1] INFO  utils.LoggerUtil - ? Field Match | JsonPath: data.id | Expected: 2 | Actual: 2
+2026-05-07 20:42:47.216 [TestNG-tests-1] INFO  utils.LoggerUtil - Verifying response field: data.first_name against Excel column: Expected_FirstName
+2026-05-07 20:42:47.218 [TestNG-tests-1] INFO  utils.LoggerUtil - Validating response field | JsonPath: data.first_name | Excel Column: Expected_FirstName
+2026-05-07 20:42:47.244 [TestNG-tests-1] DEBUG utils.LoggerUtil - Column 'Expected_FirstName' value: Janet
+2026-05-07 20:42:47.246 [TestNG-tests-1] INFO  utils.LoggerUtil - ? Field Match | JsonPath: data.first_name | Expected: Janet | Actual: Janet
+2026-05-07 20:42:47.248 [TestNG-tests-1] INFO  utils.LoggerUtil - Verifying response field: data.last_name against Excel column: Expected_LastName
+2026-05-07 20:42:47.248 [TestNG-tests-1] INFO  utils.LoggerUtil - Validating response field | JsonPath: data.last_name | Excel Column: Expected_LastName
+2026-05-07 20:42:47.268 [TestNG-tests-1] DEBUG utils.LoggerUtil - Column 'Expected_LastName' value: Weaver
+2026-05-07 20:42:47.270 [TestNG-tests-1] INFO  utils.LoggerUtil - ? Field Match | JsonPath: data.last_name | Expected: Weaver | Actual: Weaver
+2026-05-07 20:42:47.275 [TestNG-tests-1] INFO  utils.LoggerUtil - === Scenario: Run GET request for each user test case in Excel Status: PASSED ===
+2026-05-07 20:42:47.275 [TestNG-tests-1] INFO  utils.LoggerUtil - Execution Summary: Scenario: src/test/resources/testdata/GetUserDataDriven.xlsx | Sheet: GetUserDataDriven | Progress: 1/4 rows
+2026-05-07 20:42:47.275 [TestNG-tests-1] INFO  utils.LoggerUtil - DataDrivenContext reset
+2026-05-07 20:42:47.275 [TestNG-tests-1] INFO  utils.LoggerUtil - DataDrivenScenarioManager cleanup completed
+2026-05-07 20:42:49.635 [main] INFO  utils.LoggerUtil - ========================================
+2026-05-07 20:42:49.635 [main] INFO  utils.LoggerUtil - Finishing API automation suite
+2026-05-07 20:42:49.635 [main] INFO  utils.LoggerUtil - ========================================
+2026-05-07 20:42:49.635 [main] INFO  utils.LoggerUtil - ======= GlobalContext Dump =======
+2026-05-07 20:42:49.635 [main] INFO  utils.LoggerUtil - currentRowData => {Expected_ID=2, Expected_LastName=Weaver, Expected_FirstName=Janet, Test_Case_Name=Positive_ValidUser_1, userId=2, Status_Code=200}
+2026-05-07 20:42:49.635 [main] INFO  utils.LoggerUtil - currentRowIndex => 1
+2026-05-07 20:42:49.635 [main] INFO  utils.LoggerUtil - ===================================
+2026-05-07 20:42:49.741 [main] INFO  utils.LoggerUtil - Extent reports flushed successfully
+2026-05-07 20:42:49.741 [main] INFO  utils.LoggerUtil - Extent reports flushed successfully
+2026-05-07 20:44:31.273 [main] INFO  utils.LoggerUtil - ========================================
+2026-05-07 20:44:31.273 [main] INFO  utils.LoggerUtil - Starting API automation suite execution
+2026-05-07 20:44:31.273 [main] INFO  utils.LoggerUtil - ========================================
+2026-05-07 20:44:31.291 [main] INFO  utils.LoggerUtil - Environment initialized
+2026-05-07 20:44:31.291 [main] INFO  utils.LoggerUtil - Using environment: QA
+2026-05-07 20:44:31.291 [main] INFO  utils.LoggerUtil - All required directories verified
+2026-05-07 20:44:31.291 [main] INFO  utils.LoggerUtil - Environment initialized
+2026-05-07 20:44:31.291 [main] DEBUG utils.LoggerUtil - Default configuration loaded
+2026-05-07 20:44:31.291 [main] DEBUG utils.LoggerUtil - Environment configuration loaded
+2026-05-07 20:44:31.291 [main] INFO  utils.LoggerUtil - Configuration loaded successfully
+2026-05-07 20:44:31.291 [main] INFO  utils.LoggerUtil - Configuration properties loaded successfully for environment: QA
+2026-05-07 20:44:31.544 [main] INFO  utils.LoggerUtil - Extent reports initialized successfully
+2026-05-07 20:44:31.544 [main] INFO  utils.LoggerUtil - Extent reports initialized
+2026-05-07 20:44:31.544 [main] INFO  utils.LoggerUtil - GlobalContext cleared
+2026-05-07 20:44:31.544 [main] INFO  utils.LoggerUtil - Global context cleared for fresh start
+2026-05-07 20:44:32.839 [TestNG-tests-2] INFO  utils.LoggerUtil - API Client initialized successfully
+2026-05-07 20:44:32.988 [TestNG-tests-2] INFO  utils.LoggerUtil - Executing GET /api/users/{{userId}} (Attempt 1/3)
+2026-05-07 20:44:32.988 [TestNG-tests-2] INFO  utils.LoggerUtil - Executing GET request to: /api/users/{{userId}}
+2026-05-07 20:45:45.966 [TestNG-tests-2] DEBUG utils.LoggerUtil - Not in a data-driven context; using endpoint as-is
+2026-05-07 20:45:45.966 [TestNG-tests-2] INFO  utils.LoggerUtil - Resolved endpoint with Excel data: /api/users/{{userId}}
