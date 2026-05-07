@@ -14,6 +14,7 @@ import java.util.Map;
 public final class ExcelUtil {
 
     private ExcelUtil() {
+        // Utility class
     }
 
     /**
@@ -22,15 +23,14 @@ public final class ExcelUtil {
     private static String getEnvironmentSpecificExcelPath(String basePath) {
         String environment = ConfigLoader.getCurrentEnvironment();
 
-        // Try environment-specific path first
         String envSpecificPath = basePath.replace(".xlsx", "-" + environment + ".xlsx");
-        if (new File(envSpecificPath).exists()) {
-            LoggerUtil.info("Using environment-specific Excel: " + envSpecificPath);
+        File envFile = new File(envSpecificPath);
+        if (envFile.exists()) {
+            LoggerUtil.info("Using environment-specific Excel file");
             return envSpecificPath;
         }
 
-        // Fall back to default path
-        LoggerUtil.info("Using default Excel: " + basePath);
+        LoggerUtil.info("Using default Excel file");
         return basePath;
     }
 
@@ -41,31 +41,29 @@ public final class ExcelUtil {
         Map<String, String> data = new LinkedHashMap<>();
         DataFormatter formatter = new DataFormatter();
 
-        // Get environment-specific path if available
         String actualExcelPath = getEnvironmentSpecificExcelPath(excelPath);
 
         try {
-            // Validate file exists
             File excelFile = new File(actualExcelPath);
             if (!excelFile.exists()) {
-                throw new DataException(actualExcelPath, "Excel file not found: " + actualExcelPath);
+                throw new DataException("Excel file not found", "Excel file does not exist");
             }
 
             try (Workbook workbook = WorkbookFactory.create(excelFile)) {
                 Sheet sheet = workbook.getSheet(sheetName);
                 if (sheet == null) {
-                    throw new DataException(sheetName, "Sheet not found in Excel: " + sheetName);
+                    throw new DataException("Sheet not found", "Requested sheet missing");
                 }
 
                 Row headerRow = sheet.getRow(0);
                 Row valueRow = sheet.getRow(rowIndex);
 
                 if (headerRow == null) {
-                    throw new DataException(actualExcelPath, "Header row is missing in Excel sheet: " + sheetName);
+                    throw new DataException("Header missing", "Header row missing in Excel");
                 }
 
                 if (valueRow == null) {
-                    throw new DataException(actualExcelPath, "Value row " + rowIndex + " is missing in Excel sheet: " + sheetName);
+                    throw new DataException("Row missing", "Requested data row missing");
                 }
 
                 int maxCells = Math.max(headerRow.getLastCellNum(), valueRow.getLastCellNum());
@@ -77,12 +75,12 @@ public final class ExcelUtil {
                     }
                 }
 
-                LoggerUtil.info("Successfully read " + data.size() + " data points from Excel row " + rowIndex);
+                LoggerUtil.info("Excel row data read successfully");
             }
         } catch (DataException e) {
             throw e;
         } catch (Exception e) {
-            LoggerUtil.error("Failed to read Excel file: " + actualExcelPath, e);
+            LoggerUtil.error("Excel processing failed", e);
         }
 
         return data;
@@ -95,24 +93,23 @@ public final class ExcelUtil {
         java.util.List<Map<String, String>> allRows = new java.util.ArrayList<>();
         DataFormatter formatter = new DataFormatter();
 
-        // Get environment-specific path if available
         String actualExcelPath = getEnvironmentSpecificExcelPath(excelPath);
 
         try {
             File excelFile = new File(actualExcelPath);
             if (!excelFile.exists()) {
-                throw new DataException(actualExcelPath, "Excel file not found: " + actualExcelPath);
+                throw new DataException("Excel file not found", "Excel file does not exist");
             }
 
             try (Workbook workbook = WorkbookFactory.create(excelFile)) {
                 Sheet sheet = workbook.getSheet(sheetName);
                 if (sheet == null) {
-                    throw new DataException(sheetName, "Sheet not found in Excel: " + sheetName);
+                    throw new DataException("Sheet not found", "Requested sheet missing");
                 }
 
                 Row headerRow = sheet.getRow(0);
                 if (headerRow == null) {
-                    throw new DataException(actualExcelPath, "Header row is missing");
+                    throw new DataException("Header missing", "Header row missing");
                 }
 
                 for (int i = 1; i <= sheet.getLastRowNum(); i++) {
@@ -131,12 +128,12 @@ public final class ExcelUtil {
                     allRows.add(rowData);
                 }
 
-                LoggerUtil.info("Successfully read " + allRows.size() + " rows from Excel sheet: " + sheetName);
+                LoggerUtil.info("Excel rows read successfully");
             }
         } catch (DataException e) {
             throw e;
         } catch (Exception e) {
-            LoggerUtil.error("Failed to read Excel file: " + actualExcelPath, e);
+            LoggerUtil.error("Excel processing failed", e);
         }
 
         return allRows;

@@ -10,6 +10,8 @@ import utils.ConfigLoader;
 import utils.LoggerUtil;
 import utils.RequestResponseLogger;
 import utils.RetryUtil;
+import utils.DataDrivenContext;
+import java.util.Map;
 
 public class APIClient {
 
@@ -54,13 +56,18 @@ public class APIClient {
     private Response executeGet(String endpoint) {
         try {
             LoggerUtil.info("Executing GET request to: " + endpoint);
+
+            // NEW: Resolve placeholders in endpoint using Excel data from DataDrivenContext
+            String resolvedEndpoint = resolveEndpointPlaceholders(endpoint);
+            LoggerUtil.info("Resolved endpoint with Excel data: " + resolvedEndpoint);
+
             RestAssured.baseURI = ConfigLoader.get("baseURL");
 
             Response response = RestAssured
                     .given()
                     .header("x-api-key", TokenManager.getApiKey())
                     .when()
-                    .get(endpoint)
+                    .get(resolvedEndpoint)  // Use resolved endpoint
                     .then()
                     .extract()
                     .response();
@@ -235,4 +242,39 @@ public class APIClient {
             throw new APIException("PATCH request failed for endpoint: " + endpoint, e);
         }
     }
+
+    /**
+     * Resolves placeholders in the endpoint string using values from DataDrivenContext (Excel data).
+     * Placeholders should be in the format {{columnName}}, e.g., {{userId}}.
+     * @param endpoint The original endpoint string
+     * @return Endpoint with placeholders replaced by Excel values
+     */
+    private String resolveEndpointPlaceholders(String endpoint) {
+        String resolved = endpoint;
+        try {
+            // Check if DataDrivenContext has data (i.e., we're in a data-driven scenario)
+            if (DataDrivenContext.getCurrentRowIndex() > 0) {  // Ensure data is loaded
+                Map<String, String> currentRowData = DataDrivenContext.getAllCurrentRowData();
+                if (currentRowData != null && !currentRowData.isEmpty()) {
+                    for (Map.Entry<String, String> entry : currentRowData.entrySet()) {
+                        String placeholder = "{{" + entry.getKey() + "}}";
+                        String value = entry.getValue();
+                        if (value != null && resolved.contains(placeholder)) {
+                            resolved = resolved.replace(placeholder, value);
+                            LoggerUtil.debug("Replaced placeholder " + placeholder + " with value: " + value);
+                        }
+                    }
+                } else {
+                 //   LoggerUtil.warn("No Excel row data available for endpoint resolution");
+                }
+            } else {
+                LoggerUtil.debug("Not in a data-driven context; using endpoint as-is");
+            }
+        } catch (Exception e) {
+           // LoggerUtil.warn("Failed to resolve endpoint placeholders: " + e.getMessage());
+            // Continue with original endpoint if resolution fails
+        }
+        return resolved;
+    }
+
 }

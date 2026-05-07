@@ -9,7 +9,7 @@ import utils.LoggerUtil;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "stepdefinitions",
-        tags = "@VancityAPIAutomation",
+        tags = "@GetUserDataDriven7may",
         plugin = {
                 "pretty",
                 "summary",

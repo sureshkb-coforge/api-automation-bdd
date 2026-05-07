@@ -67,25 +67,25 @@ public class BaseTest {
         }
     }
 
-    @BeforeClass
-    public void setupDatabase() {
-        try {
-            LoggerUtil.info("Setting up database connection pool for test suite");
-            DatabaseConnectionManager.getInstance().initializeFromConfig();
-        } catch (Exception e) {
-            LoggerUtil.warn("Database initialization failed - tests without DB will continue", (SQLException) e);
-        }
-    }
-
-    @AfterClass
-    public void teardownDatabase() {
-        try {
-            LoggerUtil.info("Tearing down database connection pool");
-            DatabaseConnectionManager.getInstance().closePool();
-        } catch (Exception e) {
-            LoggerUtil.warn("Error closing database pool", (SQLException) e);
-        }
-    }
+//    @BeforeClass
+//    public void setupDatabase() {
+//        try {
+//            LoggerUtil.info("Setting up database connection pool for test suite");
+//            DatabaseConnectionManager.getInstance().initializeFromConfig();
+//        } catch (Exception e) {
+//            LoggerUtil.warn("Database initialization failed - tests without DB will continue", (SQLException) e);
+//        }
+//    }
+//
+//    @AfterClass
+//    public void teardownDatabase() {
+//        try {
+//            LoggerUtil.info("Tearing down database connection pool");
+//            DatabaseConnectionManager.getInstance().closePool();
+//        } catch (Exception e) {
+//            LoggerUtil.warn("Error closing database pool", (SQLException) e);
+//        }
+//    }
 
     /**
      * Ensure all required directories exist
